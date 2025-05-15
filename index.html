@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Climate vs Economy: Animated Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header><h1>Climate vs Economy Trends</h1></header>
+  <div id="controls">
+    <label for="x-select">Climate Indicator (X):</label>
+    <select id="x-select">
+      <option value="temperature">Temperature Rise (°C)</option>
+      <option value="seaLevel">Sea Level Rise (cm)</option>
+      <option value="disasters">Natural Disasters (events/year)</option>
+    </select>
+    <label for="y-select">Economic Outcome (Y):</label>
+    <select id="y-select">
+      <option value="gdp">Global GDP Change (%)</option>
+      <option value="food">Food Price Index</option>
+      <option value="wheat">Wheat Yield (tons/hectare)</option>
+    </select>
+    <button id="playBtn">▶︎ Play Animation</button>
+  </div>
+  <svg id="chart"></svg>
+  <div class="legend" id="legend"></div>
+  <div class="tooltip" id="tooltip"></div>
+</body>
+</html>
