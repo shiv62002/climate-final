@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Climate vs Economy: Animated Dashboard</title>
+  <link rel="stylesheet" href="css/global.css" />
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script defer src="js/global.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Climate vs Economy Trends</h1>
+  </header>
+
+  <div id="controls">
+    <label for="x-select">Climate Indicator (X):</label>
+    <select id="x-select"></select>
+
+    <label for="y-select">Economic Outcome (Y):</label>
+    <select id="y-select"></select>
+
+    <button id="playBtn">▶︎ Play Animation</button>
+  </div>
+
+  <svg id="chart"></svg>
+  <div class="legend" id="legend"></div>
+  <div class="tooltip" id="tooltip"></div>
+</body>
+
+</html>

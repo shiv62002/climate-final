@@ -1,31 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <title>Climate vs Economy: Animated Dashboard</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="UTF-8" />
+  <title>Global Climate-Economic Choropleth</title>
+  <link rel="stylesheet" href="css/index.css">
   <script src="https://d3js.org/d3.v7.min.js"></script>
-  <script defer src="js/script.js"></script>
+  <script defer src="js/index.js"></script>
 </head>
+
 <body>
-  <header><h1>Climate vs Economy Trends</h1></header>
-  <div id="controls">
-    <label for="x-select">Climate Indicator (X):</label>
-    <select id="x-select">
-      <option value="temperature">Temperature Rise (°C)</option>
-      <option value="seaLevel">Sea Level Rise (cm)</option>
-      <option value="disasters">Natural Disasters (events/year)</option>
-    </select>
-    <label for="y-select">Economic Outcome (Y):</label>
-    <select id="y-select">
-      <option value="gdp">Global GDP Change (%)</option>
-      <option value="food">Food Price Index</option>
+  <h1>Global Climate-Economic Explorer</h1>
+
+  <div class="controls">
+    <a href="global.html" class="explore-btn">🌍 Compare Global Climate & Economy</a>
+    <label for="datasetSelect"><strong>Select Dataset:</strong></label>
+    <select id="datasetSelect">
+      <option value="gdp">GDP Growth (%)</option>
       <option value="wheat">Wheat Yield (tons/hectare)</option>
+      <option value="temperature">Temperature Anomaly (°C)</option>
+      <option value="foodInflation">Consumer Price Inflation (%)</option>
+      <option value="disasterDamage">Disaster Damages (% of GDP)</option>
     </select>
-    <button id="playBtn">▶︎ Play Animation</button>
+
+    <label for="yearSlider">
+      <strong>Year: <span id="yearLabel">2022</span></strong>
+    </label>
+    <input type="range" id="yearSlider" min="2000" max="2022" value="2022" />
+
+    <div id="legend" style="margin-top: 0.3rem;"></div>
   </div>
-  <svg id="chart"></svg>
-  <div class="legend" id="legend"></div>
+
+  <svg id="map"></svg>
   <div class="tooltip" id="tooltip"></div>
+
+  <div style="max-width: 800px; margin: 1.2rem auto; text-align: center; font-weight: bold; line-height: 1.6;">
+    This interactive heatmap allows you to explore how economic and climate metrics have changed throughout the world from 2000 to 2024.
+    Five datasets can be selected to show year-by-year trends for every country:
+    <br><br>
+    GDP Growth (%)<br>
+    Wheat Yield (tons/hectare)<br>
+    Temperature Anomaly (°C)<br>
+    Consumer Price Inflation (%)<br>
+    Disaster Damages (% of GDP)<br><br>
+    Both data sets are represented on the global maps with color density reflecting the value of the selected indicator for a given year.
+    On hover, a nation shows data for the corresponding year.
+    Clicking on a nation opens up the dashboard of the selected country, showing historical trends (2000-2024) for the five indicators.
+    <br><br>
+    The visualization is used to illustrate the relationship between economic performance and climate influences, allowing the user to investigate country-level climate-economic relationships.
+  </div>
 </body>
+
 </html>

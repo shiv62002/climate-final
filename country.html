@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Country Climate-Economic Trends</title>
+  <link rel="stylesheet" href="css/country.css" />
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script defer src="js/country.js"></script>
+</head>
+
+<body>
+  <header>
+    Climate vs Economy Trends for <span id="countryCode">???</span>
+  </header>
+
+  <div id="controls">
+    <label>Climate Indicator (X):
+      <select id="x-select"></select>
+    </label>
+    <label>Economic Outcome (Y):
+      <select id="y-select"></select>
+    </label>
+    <button id="playBtn">▶ Play Animation</button>
+    <input id="yearSlider" min="2000" max="2022" value="2022">
+  </div>
+
+  <svg id="chart"></svg>
+  <div class="legend" id="legend"></div>
+  <div class="tooltip" id="tooltip"></div>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: #f8f8f8;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    background: #1c3d5a;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  #controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+    gap: 1rem;
+  }
+  
+  select,
+  button {
+    padding: 0.55rem 1rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background: #1c3d5a;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  svg {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+    margin: 2rem auto;
+    border-radius: 8px;
+    overflow: visible;
+  }
+  
+  .tooltip {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #aaa;
+    padding: 6px;
+    font-size: 12px;
+    pointer-events: none;
+    opacity: 0;
+    border-radius: 4px;
+  }
+  
+  .legend {
+    display: flex;
+    justify-content: center;
+    margin-top: -1rem;
+    gap: 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .legend div {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  
+  .legend-swatch {
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+  }
+  
