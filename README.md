@@ -7,22 +7,33 @@ When you open the main page, you’ll see an interactive world heat map. Use the
 When you click on a country in the front-page map, you’ll be taken to another page for that specific nation. On that page, you will see interactive line charts that display the full 2000–2022 trend for 2 of the variables (GDP growth, wheat yield, temperature anomaly, food-price inflation, and disaster damages) letting you hover over points for exact values and compare patterns over time. In the same light, you can interactively visualize datasets which compare global climate trends to economic factors globally for the whole world using the global link at the top of the page.  
 
 Acknowledgements:
+
 Country-Level Data Sources:
 
 Economic Damages from Natural Disasters (% of GDP): Our World in Data
+https://ourworldindata.org/natural-disasters
 Wheat Yield (tons/hectare): Our World in Data
+https://ourworldindata.org/grapher/wheat-yields?time=1755
 Annual GDP Growth & Values (constant USD): World Bank
+https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG
 Consumer Price Inflation (%): World Bank
+https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG
 Monthly Temperature Anomalies (°C): Our World in Data
+https://ourworldindata.org/grapher/monthly-temperature-anomalies 
 
 Global Datasets:
 
 Annual Deaths from Natural Disasters: Our World in Data
+https://ourworldindata.org/grapher/number-of-deaths-from-natural-disasters?time=1926..latest
 Global GDP Over the Long Run: Our World in Data
+https://ourworldindata.org/grapher/global-gdp-over-the-long-run
 Monthly Temperature Anomalies (°C): Our World in Data
 Number of Natural Disaster Events per Year: Our World in Data
+https://ourworldindata.org/grapher/number-of-natural-disaster-events
 Global Food Price Index: https://fred.stlouisfed.org/series/PFOODINDEXM
+https://fred.stlouisfed.org/series/PFOODINDEXM 
 Wheat Yield (tons/hectare): Our World in Data
+https://ourworldindata.org/grapher/wheat-yields?time=1755
 Global Rise In Sea Levels: https://www.epa.gov/climate-indicators/climate-change-indicators-sea-level
 
 
