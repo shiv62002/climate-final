@@ -1,6 +1,6 @@
 # Climate-Economy Interactive Visualization
 
-Live Page: [Climate Dashboard](https://shiv62002.github.io/climate-final/)
+Live Page: [Climate Dashboard](https://shiv62002.github.io/Climate-Economy-Dashboard/)
 
 This project presents an interactive visualization platform that explores how climate-related changes influence economic outcomes across countries and over time. The site connects long-term climate variables such as temperature anomalies and natural disasters with economic indicators including GDP growth, wheat yield, food-price inflation, and damages as a share of GDP. The interface enables both global-level and country-specific analysis through maps, charts, and time-series comparisons.
 
